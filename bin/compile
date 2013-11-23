@@ -209,3 +209,5 @@ mkdir -p $CACHE_DIR/$ARCHIVE_NAME
 mkdir -p $BUILD_DIR/bin
 tar jxf $CACHE_DIR/$FILE_NAME -C $CACHE_DIR
 mv $CACHE_DIR/$ARCHIVE_NAME $BUILD_DIR/bin/phantomjs
+
+echo "export PATH=\"\$HOME/bin/phantomjs/bin:\$PATH\"" > $BUILD_DIR/.profile.d/phantomjs.sh
